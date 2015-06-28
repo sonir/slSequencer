@@ -57,6 +57,7 @@ void slSequencer::execute(SequenceData *s){
 #endif
             //Process the bang quantum.
             executeOneQuantum(q);
+            q->done=true; //flg the quantum was finished.
             
         }
         
@@ -72,6 +73,7 @@ void slSequencer::executeOneQuantum(quantum *q){
         cout << "test was invoked" << endl;
         
     }
+
 
 }
 
