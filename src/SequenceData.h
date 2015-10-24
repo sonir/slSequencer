@@ -19,7 +19,7 @@
 #include "slChrono.h"
 
 //Function prototype
-int64_t mergeInt32to64(unsigned int hi, unsigned int low);
+// int64_t mergeInt32to64(unsigned int hi, unsigned int low);
 
 
 typedef enum {TEST} command;
@@ -37,17 +37,17 @@ typedef struct quantum {
 
 
 //C Func for merge ints
-int64_t mergeInt32to64(unsigned int hi, unsigned int low){
+// int64_t mergeInt32to64(unsigned int hi, unsigned int low){
     
-    int64_t int64;
+//     int64_t int64;
     
-    int64 = (int64_t)hi;
-    int64 = int64 << 32; //Bitshift to HiBit
-    int64 += (int64_t)low; //Write remainbit to
+//     int64 = (int64_t)hi;
+//     int64 = int64 << 32; //Bitshift to HiBit
+//     int64 += (int64_t)low; //Write remainbit to
     
-    return int64;
+//     return int64;
     
-}
+// }
 
 
 class SequenceData {

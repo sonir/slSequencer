@@ -20,14 +20,13 @@ void slSequencer::update(){
         s = &sequences[i]; //Get sequence to process
         if( !s->finished && (s->st <= now)){ //If it was not played and time has came.
 #ifdef DEBUG
-//            cout << "SEQ[" << i << "] start time has came. execute." << endl;
+            cout << "SEQ[" << i << "] start time has came. execute." << endl;
 #endif
             execute(s); // If the time quantum, do it
             if(checkTheSequenceIsFinished(&sequences[i])){
                 #ifdef DEBUG
                 cout << "the seq [" << i << "] was  finised" << endl;
                 #endif
-                
             }
             
         }
@@ -70,7 +69,7 @@ void slSequencer::executeOneQuantum(quantum *q){
     
     if(q->cmd==TEST){
         
-        cout << "test was invoked" << endl;
+        cout << "SEQ: test was invoked" << endl;
         
     }
 

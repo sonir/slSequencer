@@ -1,4 +1,4 @@
-// #define DEBUG
+//#define DEBUG
 #define MSEC_TO_CHRONO 1000
 
 #include <stdio.h>
